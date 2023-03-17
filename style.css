@@ -1,0 +1,124 @@
+* {
+  font-weight: bold;
+}
+body {
+  background-color: #537fe7;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  background-image: url("https://i.stack.imgur.com/wN3s7.png");
+}
+form {
+  background-color: #fff;
+  width: 600px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px #e3dffd;
+}
+.formcontrol {
+  text-align: left;
+  margin-bottom: 25px;
+}
+.formcontrol label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.formcontrol input,
+.formcontrol select,
+.formcontrol textarea {
+  border: 1px solid #777;
+  border-radius: 7px;
+  font-family: inherit;
+  padding: 10px;
+  display: block;
+  width: 95%;
+  font-size: 21px;
+}
+.formcontrol input[type="radio"],
+.formcontrol input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+formcontrol input[type="date"] {
+  display: inline-block;
+  width: 50px;
+}
+button {
+  background-color: #05c46b;
+  border: 1px solid #777;
+  font-family: inherit;
+  font-size: 20px;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 100px;
+  position: relative;
+  bottom: 90px;
+  color: white;
+}
+button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+table {
+  width: 70%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  position: relative;
+  left: 290px;
+}
+table,
+th,
+tbody,
+td {
+  border: 1px solid black;
+  font-size: 21px;
+}
+th {
+  background-color: #05c46b;
+  color: white;
+}
+#res {
+  background-color: grey;
+  border: 1px solid #777;
+  font-family: inherit;
+  font-size: 20px;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 100px;
+  position: relative;
+  left: 500px;
+
+  color: white;
+}
+input[type="text"]:focus {
+  border-radius: 70px;
+  font-weight: bold;
+}
+input[type="text"] {
+  text-transform: uppercase;
+}
+#mail:focus {
+  border-radius: 70px;
+  font-weight: bold;
+}
+#num:focus {
+  border-radius: 70px;
+  font-weight: bold;
+}
+#dob:focus {
+  border-radius: 70px;
+  font-weight: bold;
+}
+#opt:focus {
+  border-radius: 70px;
+  font-weight: bold;
+}
+a {
+  color: blue;
+}
+a:last-child {
+  color: red;
+}

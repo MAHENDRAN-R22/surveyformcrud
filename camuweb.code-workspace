@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../Documents/camuweb"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../Desktop/stafflogin"
+		},
+		{
+			"path": "../student"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "camuweb"
+	}
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>registration form</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Registration form</h1>
+        <form name="surveyform" action="/action_page.php" id="form" autocomplete="off" onsubmit="event.preventDefault();onFormSubmit();">
+            <div class="formcontrol">
+                <label for="fname" class="validation-error hide" id="fullNameValidationError">Name</label>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+            </div>
+            <div class="formcontrol">
+                <label for="email">Email</label>
+                <input type="email" id="mail" placeholder="Enter your email" required>
+            </div>
+            <div class="formcontrol">
+                <label for="num">Mobile Number</label>
+                <input type="number" id="num" placeholder="Enter your Mobile Number" required>
+            </div>
+            <div class="formcontrol">
+                <label for="num">Enter your DOB</label>
+                <input type="date" id="dob" placeholder="Enter your age" required>
+            </div>
+            <div class="formcontrol">
+                <label for="select">Nationality</label>
+                <select name="option" id="nation" required>
+                    <option value=""></option>
+                    <option value="INDIA">INDIA</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="formcontrol">
+                <label for="">Gender</label>
+                <label for="">
+                    <input class="radio" name="gender" value="Male" type="radio">Male </label>
+                <label for="">
+                    <input class="radio" name="gender" value="Female" type="radio">Female </label>
+                <label for="">
+                    <input class="radio" name="gender" value="Other" type="radio">Other </label>
+            </div>
+            <div class="formcontrol">
+                <label>Languages and Frameworks known</label>
+                <label for="">
+                    <input class="check" type="checkbox" value="HTML">HTML</input>
+                </label>
+                <label for="">
+                    <input class="check" type="checkbox" value="CSS">CSS</input>
+                </label>
+                <label for="">
+                    <input class="check" type="checkbox" value="JavaScript">JavaScript</input>
+                </label>
+                <label for="">
+                    <input class="check" type="checkbox" value="React">React</input>
+                </label>
+                <label for="">
+                    <input class="check" type="checkbox" value="Angular">Angular</input>
+                </label>
+                <label for="">
+                    <input class="check" type="checkbox" value="MONGODB">MONGODB</input>
+                </label>
+            </div>
+            <div class="formcontrol">
+                <label for="">Any Feedback</label>
+                <textarea id="feed" cols="30" rows="5" placeholder="Enter your Comment here"></textarea>
+            </div>
+            <input id="res" type="Reset">
+            <button>Submit</button>
+        </form>
+        <table class="list" id="Survey"> "> <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile Number</th>
+                    <th>DOB</th>
+                    <th>Nationality</th>
+                    <th>Gender</th>
+                    <th>Languagesknown</th>
+                    <th>Feedback</th>
+                    <th>Update</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <script src="survey.js"></script>
+    </body>
+</html>
